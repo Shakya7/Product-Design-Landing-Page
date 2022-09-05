@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    list-style: none;
+    color:white;
+}
+
+.container{
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.5rem 5rem;
+}
+nav>:last-child{
+    display: none;
+}
+.logo{
+    width:5rem;
+}
+
+.nav-items{
+    display: flex;
+    gap:4rem;
+}
+.nav-item{
+    color:white;
+    font-family: "Ubuntu";
+    transition:color 0.3s ease-in-out
+}
+.nav-item:hover{
+    color:#BF3312;
+    cursor:pointer;
+    font-weight: bold;
+}
+.hero-section-header{
+    display:flex;
+    min-height:20vh;
+    align-items: center;
+    justify-content: center;
+    gap:4px;
+}
+.hero-text-div{
+    color:white;
+}
+
+.hero-img-div img{
+    max-width: 100%;
+    width:500px;
+}
+.hero-text-div{
+    min-width:30vw;
+    font-family: "Merriweather";
+    justify-self: flex-end;
+}
+.hero-text-div>:first-child{
+    color:#BF3312;
+    font-size: 1.4rem;
+    
+}
+.hero-text-div h1{
+    font-size: 4rem;
+    margin-bottom:1rem;
+}
+.hero-text-div>:nth-child(3){
+    width:40vw;
+    font-weight: lighter;
+    font-size:0.8rem;
+}
+.hero-text-div button{
+    background-color: #BF3312;
+    padding:0.8rem 1.5rem;
+    border:none;
+    color:white;
+    margin-top:1.5rem;
+    border-radius:5px;
+}
+
+.feature-section {
+    background-color: #1e1e1e49;
+    height: 100%;
+    background: linear-gradient(90deg, #1e1e1e49 50%, #111111 50%);
+    padding: 7rem 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .feature-container {
+    max-width: 100rem;
+    margin: 0 auto;
+    color: #fbfbfb;
+    /* margin-top: 2rem; */
+  }
+  
+  .feature-section img {
+    width: 25%;
+  }
+  
+  .feature-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.8rem;
+  
+    padding: 0 1.2rem 0 1.2rem;
+  }
+  
+  .card {
+    padding: 1.8rem 1.8rem 1.8rem 5.6rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 2.4rem;
+    background-color: #1e1e1e;
+  }
+  
+  .active-card {
+    background-color: #c91b28;
+  }
+  
+  .card-heading {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+  
+  .card-description {
+    font-size: 1.6rem;
+    width: 70%;
+    font-family: "Ubuntu";
+  }
+  
+  .card-link a {
+    color: #f43242;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "Ubuntu";
+  }
+  
+  .active-card .card-link a {
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .feature-statistics {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 0.9rem;
+  
+    margin-top: 9.6rem;
+    padding: 0 1.2rem 0 1.2rem;
+  }
+  
+  .statistics-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
+  }
+  
+  .years-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .number-of-years {
+    font-size: 6.4rem;
+    font-weight: 800;
+    color: #c91b28;
+  }
+  
+  .year-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Ubuntu";
+  }
+  
+  .statistics-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 3.2rem;
+  
+    background-color: #1e1e1e;
+  }
+  
+  .statistics-number {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #c91b28;
+  }
+  
+  .statistics-text {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.596);
+    font-family: "Ubuntu";
+  }
+
+  .featured-projects-section {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 1.8rem 0 1.8rem;
+  }
+  
+  .featured-projects-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 2.4rem;
+    padding: 0 1.2rem 0 1.2rem;
+  }
+  
+  .featured-projects-text h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: "Poppins";
+  }
+  
+  .featured-projects-text p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.589);
+    margin-top: 1.2rem;
+    font-family: "Ubuntu";
+  }
+  
+  .view-all-btn-div a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    background-color: #f43242;
+    padding: 1rem 2.8rem;
+    transition: all 0.35s;
+    font-family: "Ubuntu";
+  }
+  
+  .view-all-btn-div a:hover {
+    background-color: #f4324294;
+  }
+  
+  .featured-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.4rem;
+    column-gap: 2.4rem;
+  }
+  
+  .featured-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  
+  .project-title {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Poppins";
+  }
+  
+  .img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    height: 30rem;
+    max-width: 43.5rem;
+  }
+  
+  .featured-projects-section .img-div img {
+    width: 90%;
+    object-fit: contain;
+    transition: all 0.35s;
+  }
+  
+  .featured-projects-section .img-div img:hover {
+    transform: scale(1.1);
+  }
+  
+  .know-more-btn a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #f43242;
+    font-family: "Ubuntu";
+  }
+  .bottom-div {
+    max-width: 110rem;
+    margin: 0 3rem;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+  
+    padding: 6.4rem;
+    margin-top: 9.6rem;
+    margin-bottom: 3.2rem;
+  }
+  
+  .bottom-div-description {
+    width: 60%;
+  }
+  
+  .bottom-div-heading {
+    font-size: 4.6rem;
+    font-weight: 700;
+    color: #fff;
+    width: 90%;
+  }
+  
+  .bottom-div-text {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.61);
+    margin-top: 2.4rem;
+    font-family: "Ubuntu";
+  }
+  
+  .contact-btn-div a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f43242;
+    padding: 1.2rem 3.6rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.35s;
+    font-family: "Ubuntu";
+  }
+  
+  .contact-btn-div a:hover {
+    background-color: rgba(244, 50, 66, 0.568);
+  }
+  
+  main>:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom-nav{
+    display: flex;
+    gap:2rem;
+    font-family: "Ubuntu";
+    margin-bottom:1rem;
+  }
+  .bottom-nav li{
+    font-size:100%;
+  }
+  footer{
+    display: flex;
+    padding:2rem;
+    min-height:1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    padding:1.5rem 5rem;
+  }
+  .social-icons{
+    display: flex;
+    gap:2rem;
+  }
+  .social-icons img{
+    width:1.4rem;
+  }
+  
+
+
+
+
+
+
+  @media (min-width:1850px){
+    .bottom-div{
+        margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .feature-cards {
+      grid-template-columns: 1fr;
+      row-gap: 2.4rem;
+    }
+    .feature-statistics {
+      grid-template-columns: 1fr;
+    }
+    .featured-projects-heading {
+      flex-direction: column;
+    }
+    .featured-projects-text {
+      text-align: center;
+    }
+    .view-all-btn-div {
+      margin-top: 2.4rem;
+    }
+    .years-experience {
+      margin-bottom: 3.2rem;
+    }
+  
+    .featured-projects {
+      grid-template-columns: 1fr;
+    }
+    .featured-project {
+      align-items: center;
+    }
+  }
+
+@media (max-width:830px){
+    nav{
+        padding:1rem 1rem;
+    }
+    nav>:last-child{
+        display: block;
+        color:white;
+    }
+    .nav-items{
+        display: none;
+    }
+    .bottom-div {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .bottom-div-heading {
+        margin-right: 0 !important;
+        text-align: center;
+        font-size: 200%;
+      }
+      .contact-btn-div {
+        padding-top: 6.4rem;
+      }
+}
+@media (max-width:715px){
+    .hero-section-header{
+        flex-direction: column;
+    }
+    .hero-text-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hero-text-div h1{
+        font-size: 300%;
+    }
+    .hero-text-div>:nth-child(3){
+        width:70%;
+        text-align: center;
+    }
+}
+@media (max-width:530px){
+    html{
+        font-size: 45%;
+    }
+
+}
+
+@media (max-width:415px){
+    .logo{
+        width: 50%;
+    }
+    nav>:last-child i{
+        font-size: 7vw;
+    }
+    .hero-text-div>:first-child{
+        font-size: 7vw;
+    }
+    .hero-text-div h1{
+        font-size: 10vw;
+    }
+    .hero-text-div>:nth-child(3){
+        font-size: 5vw;
+    }
+    .hero-text-div>:last-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5vw;
+        max-width: 100%;
+    }
+    .hero-text-div button{
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width:230px){
+    .statistics-cards{
+        grid-template-columns: 1fr;
+    }
+    .bottom-nav{
+        flex-direction: column;
+    }
+    .bottom-div{
+        margin: 0 auto;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-logo{
+        display: none;
+    }
+}
